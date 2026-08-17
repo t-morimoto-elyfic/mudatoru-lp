@@ -26,7 +26,7 @@
       <a href="#pricing" class="menu-link"><span class="menu-icon sp-only"></span>料金プラン</a>
       <a href="#flow" class="menu-link"><span class="menu-icon sp-only"></span>導入の流れ</a>
       <a href="#faq" class="menu-link"><span class="menu-icon sp-only"></span>よくある質問</a>
-      <a href="#contact-form" class="btn-orange pc-only">無料で相談してみる</a>
+      <a href="#contact-form" class="btn-primary pc-only">無料で相談してみる</a>
       
       <a href="#contact-form" class="mobile-menu-cta sp-only">
         <img loading="lazy" src="<?php m_asset('hero-cta-btn.svg'); ?>" alt="お問い合わせ">
@@ -655,7 +655,7 @@
           </div>
 
           <div class="form-submit mod-contactform-7">
-            <button type="submit" class="btn-orange submit-btn mod-contactform-8">送信する</button>
+            <button type="submit" class="btn-primary submit-btn mod-contactform-8">送信する</button>
           </div>
         </form>
       </div>
