@@ -108,7 +108,7 @@ header {
   color: var(--primary);
 }
 
-.btn-orange {
+.btn-primary {
   background: var(--accent);
   color: #ffffff !important;
   padding: 1.2rem 3rem;
@@ -118,11 +118,10 @@ header {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: var(--shadow-btn);
   transition: var(--transition);
 }
 
-.btn-orange:hover {
+.btn-primary:hover {
   background: #008BC2;
   transform: translateY(-2px);
 }
@@ -1444,7 +1443,7 @@ header {
   .hero-cta-wrap {
     width: 100%;
   }
-  .hero-cta-wrap .btn-orange {
+  .hero-cta-wrap .btn-primary {
     width: 100%;
     justify-content: center;
     padding: 1.5rem 1rem !important;
