@@ -1,3 +1,5 @@
+const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbzoWm0nvFIJLgeuheR2PmjsiXMrRQT8d1Fu18353D-8BwoclfgOMpoOcTtXJ0A1cBA3XA/exec';
+
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -135,11 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         dataObj[key] = value;
       });
 
-      // GASウェブアプリURL
-      const gasUrl = 'https://script.google.com/macros/s/AKfycbzoWm0nvFIJLgeuheR2PmjsiXMrRQT8d1Fu18353D-8BwoclfgOMpoOcTtXJ0A1cBA3XA/exec';
-
       // fetchでPOST送信 (CORSエラーを防ぐためtext/plainを指定)
-      fetch(gasUrl, {
+      fetch(GAS_WEB_APP_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'text/plain',
