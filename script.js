@@ -112,4 +112,60 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // GAS Form Submission
+  const contactForm = document.getElementById('gas-contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault(); // 1. デフォルトの画面遷移を防止
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+      
+      // 2. 二重送信を防止するため、送信ボタンを非活性化
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+      submitBtn.style.opacity = '0.7';
+      submitBtn.style.cursor = 'not-allowed';
+
+      // 3. 全項目の値をオブジェクトにまとめる
+      const formData = new FormData(contactForm);
+      const dataObj = {};
+      formData.forEach((value, key) => {
+        dataObj[key] = value;
+      });
+
+      // GASウェブアプリURL
+      const gasUrl = 'https://script.google.com/macros/s/AKfycbzoWm0nvFIJLgeuheR2PmjsiXMrRQT8d1Fu18353D-8BwoclfgOMpoOcTtXJ0A1cBA3XA/exec';
+
+      // fetchでPOST送信 (CORSエラーを防ぐためtext/plainを指定)
+      fetch(gasUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'text/plain',
+        },
+        body: JSON.stringify(dataObj)
+      })
+      .then(response => {
+        // 4. 送信完了・失敗のフィードバック
+        if (!response.ok) {
+          throw new Error('Network error');
+        }
+        alert('お問い合わせの送信が完了しました。2~3営業日以内に担当者よりご連絡いたします。');
+        // 5. 送信完了後はフォームの入力値をリセット
+        contactForm.reset();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('送信に失敗しました。通信環境をご確認の上、再度お試しください。');
+      })
+      .finally(() => {
+        // 5. ボタンを元に戻す
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        submitBtn.style.opacity = '1';
+        submitBtn.style.cursor = 'pointer';
+      });
+    });
+  }
 });
