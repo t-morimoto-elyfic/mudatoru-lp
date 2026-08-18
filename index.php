@@ -26,9 +26,9 @@
       <a href="#pricing" class="menu-link"><span class="menu-icon sp-only"></span>料金プラン</a>
       <a href="#flow" class="menu-link"><span class="menu-icon sp-only"></span>導入の流れ</a>
       <a href="#faq" class="menu-link"><span class="menu-icon sp-only"></span>よくある質問</a>
-      <a href="#contact-form" class="btn-primary pc-only">無料で相談してみる</a>
+      <a href="#contact" class="btn-primary pc-only">無料で相談してみる</a>
       
-      <a href="#contact-form" class="mobile-menu-cta sp-only">
+      <a href="#contact" class="mobile-menu-cta sp-only">
         <img loading="lazy" src="<?php m_asset('hero-cta-btn.svg'); ?>" alt="お問い合わせ">
       </a>
       <div class="mobile-menu-footer sp-only">
@@ -47,7 +47,7 @@
         <h1>小さな改善から<br><span>大きな改善と成果</span>に繋げる</h1>
         <p>定額制でDX推進チームが、<br>あなたの会社のDX・業務改善をサポート</p>
         <div class="hero-cta-wrap">
-          <a href="#contact-form" class="hero-cta-btn-link">
+          <a href="#contact" class="hero-cta-btn-link">
             <img loading="lazy" src="<?php m_asset('hero-cta-btn.svg'); ?>" alt="お問い合わせ・資料請求（無料）はこちら" class="mod-hero-1 hover-translate-up">
           </a>
         </div>
@@ -486,7 +486,7 @@
         <h2 class="mid-cta-title">定額制DX支援で、<br><span class="pc-only">自社の</span>業務効率化を<span class="mid-cta-highlight"><span class="pc-only">今すぐ</span>スタート！</span></h2>
         <p class="mid-cta-desc">社内のDX推進・自動化のお悩みを、プロが伴走サポートします。</p>
         <div class="mid-cta-btn-wrap">
-          <a href="#contact-form" class="btn-mid-cta">
+          <a href="#contact" class="btn-mid-cta">
             <span class="pc-only">＼限定キャンペーンに応募する（無料相談）／</span>
             <span class="sp-only">＼キャンペーンに応募する／</span>
           </a>
@@ -632,7 +632,7 @@
   </section>
 
   <!-- Contact Form -->
-  <section id="contact-form" class="section mod-contactform-1">
+  <section id="contact" class="section mod-contactform-1">
     <div class="container contact-split">
       <!-- Left Info -->
       <div class="contact-info">
@@ -729,7 +729,7 @@
         <div class="footer-company-info mod-footer-3">
           <a class="mod-footer-4" href="https://elyfic.jp" target="_blank" rel="noopener noreferrer">運営会社</a>
           <a class="mod-footer-5" href="https://elyfic.jp/law" target="_blank" rel="noopener noreferrer">特定商取引法に基づく表記</a>
-          <a class="mod-footer-6" href="https://elyfic.jp/plivacy" target="_blank" rel="noopener noreferrer"> 個人情報保護方針</a>
+          <a class="mod-footer-6" href="https://elyfic.jp/privacy" target="_blank" rel="noopener noreferrer"> 個人情報保護方針</a>
         </div>
         <p class="mod-footer-7">&copy; <?php echo date('Y'); ?> mudatoru All Rights Reserved.</p>
       </div>
