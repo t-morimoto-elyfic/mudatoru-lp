@@ -746,7 +746,7 @@ header {
   transition: var(--transition);
 }
 .faq-question h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
   color: var(--text-main);
@@ -771,7 +771,7 @@ header {
 }
 .faq-answer p {
   padding: 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   color: #444;
   line-height: 1.8;
   margin: 0;
@@ -1827,7 +1827,6 @@ header {
   }
   .features-section-title span {
     font-size: 2.2rem !important;
-    padding-bottom: 0.5rem; /* align bottom visually */
   }
 }
 
@@ -2208,7 +2207,13 @@ header {
 
 /* --- Features --- */
 .mod-features-1 {
-  display: flex; justify-content: center; align-items: center; gap: 1rem;
+  display: flex; justify-content: center; align-items: flex-end; gap: 1rem;
+}
+.mod-features-1 span {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 0.5rem;
 }
 .mod-features-2 {
   color: var(--accent);
@@ -2271,6 +2276,133 @@ header {
 .mod-simulation-5 {
   text-align:center; margin-top:3rem; font-size:1.3rem; color:#666;
 }
+
+/* --- Mid CTA --- */
+.mid-cta-section {
+  margin: 6rem 0 4rem; /* More top margin for protruding image */
+  padding: 0 2rem; /* Ensure it doesn't touch screen edges on mobile */
+}
+.mid-cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: var(--primary);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+  background-size: 30px 30px;
+  border-radius: 16px;
+  padding: 3rem 4rem;
+  box-shadow: 0 10px 30px rgba(0, 161, 224, 0.15);
+  max-width: 1100px; /* Make card slightly narrower than full container */
+  margin: 0 auto;
+}
+.mid-cta-image {
+  flex: 1;
+  max-width: 340px; /* Slightly smaller */
+  margin-top: -8rem; /* Stick out more over the top */
+  margin-left: 2rem; /* Shift to the right */
+  position: relative;
+  z-index: 1;
+}
+.mid-cta-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1)); /* Optional: add shadow to the protruding image for depth */
+}
+.mid-cta-content {
+  flex: 1;
+  color: #fff;
+}
+.mid-cta-lead {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.mid-cta-lead::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 20px;
+  border-width: 8px 8px 0 8px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+.mid-cta-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.mid-cta-highlight {
+  color: #FFDD33;
+}
+.mid-cta-desc {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+.btn-mid-cta {
+  display: inline-block;
+  background-color: #FFDD33;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.btn-mid-cta:hover {
+  background-color: #F2CC22;
+  transform: translateY(-2px);
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .mid-cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+  }
+  .mid-cta-image {
+    margin-top: -5rem; /* Less protrusion on mobile */
+    margin-left: 0; /* Reset right shift */
+  }
+  .mid-cta-title {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .mid-cta-lead {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+  }
+  .mid-cta-desc {
+    display: none;
+  }
+
+  .mid-cta-lead::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .btn-mid-cta {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+
+
 
 /* --- FAQ --- */
 .mod-faq-1 {
