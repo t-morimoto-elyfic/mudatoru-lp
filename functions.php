@@ -55,21 +55,16 @@ function mudatoru_setup() {
 add_action( 'after_setup_theme', 'mudatoru_setup' );
 
 /**
- * Maintain exact title format to match the original static HTML.
+ * Output exactly the custom title for the front page.
+ * Bypasses standard WP title parts to prevent conflicts with plugins.
  */
-function mudatoru_custom_title_parts( $title ) {
+function mudatoru_pre_get_document_title( $title ) {
     if ( is_front_page() || is_home() ) {
-        $title['title'] = 'ムダトル';
-        $title['tagline'] = '定額制DX支援サービス';
+        return 'ムダトル | 定額制DX支援サービス';
     }
     return $title;
 }
-add_filter( 'document_title_parts', 'mudatoru_custom_title_parts' );
-
-function mudatoru_document_title_separator( $sep ) {
-    return '|';
-}
-add_filter( 'document_title_separator', 'mudatoru_document_title_separator' );
+add_filter( 'pre_get_document_title', 'mudatoru_pre_get_document_title', 10 );
 
 /**
  * Output Meta tags
