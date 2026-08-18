@@ -233,6 +233,7 @@
     </div>
   </section>
 
+
   <!-- Pricing -->
   <section id="pricing" class="pricing-section section">
     <div class="container">
@@ -474,6 +475,26 @@
   </section>
 
 
+  <!-- Mid CTA -->
+  <section id="mid-cta" class="mid-cta-section">
+    <div class="container mid-cta-container">
+      <div class="mid-cta-image">
+        <img loading="lazy" src="<?php m_asset('features03.webp'); ?>" alt="無料トライアルイメージ">
+      </div>
+      <div class="mid-cta-content">
+        <p class="mid-cta-lead">【毎月5社限定】初期費用が今なら0円！</p>
+        <h2 class="mid-cta-title">定額制DX支援で、<br><span class="pc-only">自社の</span>業務効率化を<span class="mid-cta-highlight"><span class="pc-only">今すぐ</span>スタート！</span></h2>
+        <p class="mid-cta-desc">社内のDX推進・自動化のお悩みを、プロが伴走サポートします。</p>
+        <div class="mid-cta-btn-wrap">
+          <a href="#contact-form" class="btn-mid-cta">
+            <span class="pc-only">＼限定キャンペーンに応募する（無料相談）／</span>
+            <span class="sp-only">＼キャンペーンに応募する／</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Flow -->
   <section id="flow" class="section">
     <div class="container">
@@ -553,34 +574,56 @@
       <div class="faq-list">
         <div class="faq-item">
           <div class="faq-question">
-            <h3>「改善チケット」は使い切れなかった場合、翌月に繰り越せますか？</h3>
+            <h3>普段の連絡手段はどのツールを使用しますか？</h3>
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>申し訳ございません。改善チケットの翌月への繰り越しは原則として行っておりません。毎月必ず何かしらの改善を進めていただくための仕組みとお考えください。</p>
+            <p>品質管理を徹底するため、Slackでのやり取りをお願いしております。</p>
           </div>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-question">
-            <h3>導入までにどのくらいの期間がかかりますか？</h3>
+            <h3>余ったチケットは繰り越せますか？</h3>
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>最短でお申し込みから1〜2週間程度で運用を開始できます。最初の打ち合わせで課題を整理し、すぐに着手可能な施策からスタートします。</p>
+            <p>はい。未使用分は翌月へ繰り越し可能です。（※繰り越しは翌月まで有効）</p>
           </div>
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-question">
-            <h3>契約期間の縛りはありますか？</h3>
+            <h3>チケットが足りなくなったらどうなりますか？</h3>
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-answer">
           <div class="faq-answer-inner">
-            <p>最低契約期間は3ヶ月となっております。これは、施策の導入と効果測定、そして改善のサイクルを回すために必要な最低限の期間と考えているためです。</p>
+            <p>追加チケットをご購入いただくか、翌月分をご利用いただけます。</p>
+          </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>契約期間はありますか？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>最低契約期間は3ヶ月となります。<br>解約をご希望の場合は、前月までにご申告ください。</p>
+          </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>対応時間は決まっていますか？</h3>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>平日9:00~18:00となります。<br>時間外のご依頼やご連絡は翌営業日に対応させていただきます。</p>
           </div>
           </div>
         </div>
@@ -600,15 +643,15 @@
       
       <!-- Right Form -->
       <div class="contact-form-wrapper">
-        <form action="mailto:elyfic.inc@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <form id="gas-contact-form" class="contact-form">
           <div class="form-group">
             <label class="form-label">お問い合わせ種別 <span class="badge-required-outline">必須</span></label>
             <div class="radio-group mod-contactform-2">
               <label class="mod-contactform-3">
-                <input class="mod-contactform-4" type="radio" name="inquiry_type" value="まずは相談する" required> まずは相談する
+                <input class="mod-contactform-4" type="radio" name="category" value="まずは相談する" required> まずは相談する
               </label>
               <label class="mod-contactform-5">
-                <input class="mod-contactform-6" type="radio" name="inquiry_type" value="資料を請求する" required> 資料を請求する
+                <input class="mod-contactform-6" type="radio" name="category" value="資料を請求する" required> 資料を請求する
               </label>
             </div>
           </div>
@@ -620,22 +663,22 @@
           <div class="form-row">
             <div class="form-group half">
               <label class="form-label">姓 <span class="badge-required-outline">必須</span></label>
-              <input type="text" name="last_name" class="form-input" placeholder="山田" required>
+              <input type="text" name="lastName" class="form-input" placeholder="山田" required>
             </div>
             <div class="form-group half">
               <label class="form-label">名 <span class="badge-required-outline">必須</span></label>
-              <input type="text" name="first_name" class="form-input" placeholder="太郎" required>
+              <input type="text" name="firstName" class="form-input" placeholder="太郎" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group half">
               <label class="form-label">セイ <span class="badge-required-outline">必須</span></label>
-              <input type="text" name="last_name_kana" class="form-input" placeholder="ヤマダ" required>
+              <input type="text" name="lastNameKana" class="form-input" placeholder="ヤマダ" required>
             </div>
             <div class="form-group half">
               <label class="form-label">メイ <span class="badge-required-outline">必須</span></label>
-              <input type="text" name="first_name_kana" class="form-input" placeholder="タロウ" required>
+              <input type="text" name="firstNameKana" class="form-input" placeholder="タロウ" required>
             </div>
           </div>
 
@@ -646,7 +689,7 @@
 
           <div class="form-group">
             <label class="form-label">電話番号 <span class="badge-required-outline">必須</span></label>
-            <input type="tel" name="phone" class="form-input" placeholder="090-1234-5678" required>
+            <input type="tel" name="tel" class="form-input" placeholder="090-1234-5678" required>
           </div>
 
           <div class="form-group">
