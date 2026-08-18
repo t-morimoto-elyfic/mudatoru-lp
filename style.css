@@ -32,6 +32,11 @@ Text Domain: mudatoru
   box-sizing: border-box;
 }
 
+/* Fix anchor scroll offset due to sticky header */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -785,7 +790,7 @@ header {
 }
 
 /* Contact Form Layout */
-#contact-form {
+#contact {
   background-color: var(--bg-light);
 }
 .contact-split {
