@@ -113,9 +113,14 @@ header {
   color: var(--primary);
 }
 
+.header-nav a.btn-primary,
+.header-nav a.btn-primary:hover {
+  color: #ffffff;
+}
+
 .btn-primary {
   background: var(--accent);
-  color: #ffffff !important;
+  color: #ffffff;
   padding: 1.2rem 3rem;
   border-radius: 50px;
   font-size: 1.5rem;
@@ -203,7 +208,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  max-width: 24px; width: 100%;
   height: 24px;
   background: var(--primary);
   color: #fff;
@@ -222,7 +227,7 @@ header {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 0.8rem !important;
+  margin-bottom: 0.8rem;
   letter-spacing: 0.05em;
 }
 
@@ -296,7 +301,7 @@ header {
   text-align: center;
 }
 .diagram-icon {
-  width: 60px; height: 60px;
+  max-width: 60px; width: 100%; height: 60px;
   background: var(--bg-light);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -400,7 +405,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
+  max-width: 24px; width: 100%;
   height: 24px;
   background: var(--primary);
   color: #fff;
@@ -454,7 +459,7 @@ header {
   gap: 3rem;
 }
 .flow-img-circle {
-  width: 100px;
+  max-width: 100px; width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -494,7 +499,7 @@ header {
     gap: 1.5rem;
   }
   .flow-img-circle {
-    width: 75px;
+    max-width: 75px; width: 100%;
   }
   .flow-step-title {
     font-size: 2.2rem; /* slightly smaller on mobile to fit */
@@ -706,7 +711,7 @@ header {
   .footer-company-info {
     flex-direction: column;
     align-items: center;
-    gap: 1rem !important;
+    gap: 1rem;
   }
 }
 .btn-white {
@@ -1076,7 +1081,7 @@ header {
   position: absolute;
   top: -60px;
   right: 20px;
-  width: 120px;
+  max-width: 120px; width: 100%;
   height: 120px;
 }
 .sim-card-image img {
@@ -1177,7 +1182,7 @@ header {
 }
 
 .floating-campaign {
-  width: 320px;
+  max-width: 320px; width: 100%;
   aspect-ratio: 8/3;
   border-radius: 8px;
   box-shadow: var(--shadow-card);
@@ -1199,7 +1204,7 @@ header {
 }
 
 .back-to-top {
-  width: 50px;
+  max-width: 50px; width: 100%;
   height: 50px;
   background: var(--primary);
   color: var(--white);
@@ -1234,7 +1239,7 @@ header {
   }
   .back-to-top {
     display: flex !important;
-    width: 40px;
+    max-width: 40px; width: 100%;
     height: 40px;
     font-size: 1.2rem;
   }
@@ -1269,7 +1274,7 @@ header {
   position: absolute;
   top: -10px;
   right: -10px;
-  width: 24px;
+  max-width: 24px; width: 100%;
   height: 24px;
   background-color: #333;
   color: #fff;
@@ -1292,7 +1297,7 @@ header {
 }
 
 .floating-cta-btn {
-  width: 280px;
+  max-width: 280px; width: 100%;
   height: auto;
   transition: transform 0.3s ease;
   display: block;
@@ -1313,7 +1318,7 @@ header {
     bottom: 20px;
   }
   .floating-cta-btn {
-    width: 200px;
+    max-width: 200px; width: 100%;
   }
 }
 
@@ -1333,7 +1338,7 @@ header {
 .hamburger {
   display: none;
   flex-direction: column;
-  width: 30px;
+  max-width: 30px; width: 100%;
   height: 22px;
   background: transparent;
   border: none;
@@ -1410,8 +1415,8 @@ header {
   .reason-section,
   .features-section,
   .simulation-section {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   
   /* 2. Typography */
@@ -1421,18 +1426,18 @@ header {
   }
   .hero-copy p {
     font-size: 1.6rem;
-    font-weight: 700 !important;
+    font-weight: 700;
     line-height: 1.7;
     margin-bottom: 3rem;
   }
   .section-title {
     font-size: 2.4rem;
-    margin-bottom: 0.5rem !important;
-    margin-top: 0 !important;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
   }
   .section-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 2rem !important;
+    margin-bottom: 2rem;
   }
   
   /* 3. Hero Layout */
@@ -1451,8 +1456,8 @@ header {
   .hero-cta-wrap .btn-primary {
     width: 100%;
     justify-content: center;
-    padding: 1.5rem 1rem !important;
-    font-size: 1.3rem !important;
+    padding: 1.5rem 1rem;
+    font-size: 1.3rem;
     box-sizing: border-box;
   }
   
@@ -1484,18 +1489,18 @@ header {
     gap: 1.5rem;
   }
   .footer-bottom-wrapper {
-    padding: 3rem 0 2rem 0 !important;
+    padding: 3rem 0 2rem 0;
   }
   .footer-bottom {
-    justify-content: center !important;
+    justify-content: center;
     flex-direction: column;
-    text-align: center !important;
+    text-align: center;
   }
   .footer-company-info {
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column !important;
-    gap: 1.5rem !important;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -1503,8 +1508,8 @@ header {
   /* Swipeable Pricing Cards */
   .pricing-grid {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -1541,8 +1546,8 @@ header {
   /* Swipeable Simulation Cards */
   .sim-grid {
     display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -1582,9 +1587,9 @@ header {
 .logo-footer { height: 40px; width: auto; object-fit: contain; }
 
 @media (max-width: 900px) {
-  .logo-header { height: 30px !important; }
-  .logo-section-title { height: 35px !important; }
-  .logo-footer { height: 25px !important; }
+  .logo-header { height: 30px; }
+  .logo-section-title { height: 35px; }
+  .logo-footer { height: 25px; }
 }
 
 /* Global Mobile Image Resizing */
@@ -1592,12 +1597,12 @@ header {
   img[src*="problem-illust-pc.webp"],
   img[src*="about-illust-pc.webp"],
   img[src*="reason-image.webp"] {
-    max-width: 75% !important;
+    max-width: 75%;
   }
   .hero-img-area img {
-    max-width: 90% !important;
-    height: auto !important;
-    margin: 0 auto !important;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
     display: block !important;
   }
 }
@@ -1608,12 +1613,12 @@ header {
 @media (max-width: 900px) {
   /* Override inline center alignments (excluding form-submit and price-btn-area) */
   div[style*="text-align: center"]:not(.form-submit):not(.price-btn-area) {
-    text-align: left !important;
+    text-align: left;
   }
   
   /* Reset flex centering on titles */
   .about-title {
-    justify-content: flex-start !important;
+    justify-content: flex-start;
   }
 
   /* Specific left-alignments */
@@ -1624,28 +1629,28 @@ header {
   .about-header, 
   .reason-content,
   .footer-bottom {
-    text-align: left !important;
+    text-align: left;
   }
   
   /* Typography Polish */
   .hero-copy h1 {
-    font-size: 2.6rem !important;
-    text-align: left !important;
+    font-size: 2.6rem;
+    text-align: left;
   }
   .section-title {
-    font-size: 2.4rem !important;
+    font-size: 2.4rem;
   }
   .about-title-text, .problems-title, .problems-title-highlight {
-    font-size: 2.4rem !important;
-    text-align: left !important;
+    font-size: 2.4rem;
+    text-align: left;
   }
   .feature-row h3 {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
   }
   
   /* Spacing */
   .section {
-    padding: 5rem 2rem !important; /* give enough breathing room on edges */
+    padding: 5rem 2rem; /* give enough breathing room on edges */
   }
 }
 
@@ -1654,27 +1659,27 @@ header {
   
   
   img[src*="about-illust-pc.webp"] {
-    max-width: 95% !important;
+    max-width: 95%;
   }
 }
 
 /* Hero Logo Mobile Left Align */
 @media (max-width: 900px) {
   .hero-logo {
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
 /* Final Mobile Layout Polishes (Hero Left-Align & Padding) */
 @media (max-width: 900px) {
   .hero-copy {
-    align-items: flex-start !important;
+    align-items: flex-start;
   }
   
   .section {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
   
   /* Update the about section override since user wanted it wider, 
@@ -1688,20 +1693,20 @@ header {
 /* Increase space between hero-copy and hero-img on mobile */
 @media (max-width: 900px) {
   .hero-copy {
-    margin-bottom: 4rem !important;
+    margin-bottom: 4rem;
   }
 }
 
 /* Hero CTA Button Link Fix */
 .hero-cta-btn-link {
   display: inline-block;
-  width: 420px;
+  max-width: 420px; width: 100%;
   max-width: 100%;
   text-align: center;
 }
 @media (max-width: 900px) {
   .hero-cta-btn-link {
-    width: 350px;
+    max-width: 350px; width: 100%;
   }
 }
 .hero-cta-btn-link img {
@@ -1713,8 +1718,8 @@ header {
 /* Hero Section Mobile Padding Fix */
 @media (max-width: 900px) {
   .hero {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1722,47 +1727,47 @@ header {
 @media (max-width: 900px) {
   .hero {
     /* Reset any weird padding on hero itself */
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .hero .container {
     /* Apply a nice readable padding to the container */
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-    width: 100% !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
     box-sizing: border-box;
   }
 
   .hero-copy {
-    padding-right: 0 !important;
-    width: 100% !important;
+    padding-right: 0;
+    width: 100%;
   }
 
   .hero-cta-wrap {
-    width: 100% !important;
+    width: 100%;
     display: flex !important;
-    align-items: flex-start !important; 
+    align-items: flex-start; 
   }
 
   .hero-cta-btn-link {
-    width: 100% !important;
-    max-width: 360px !important;
-    margin: 0 !important; /* Left aligned to match text */
+    width: 100%;
+    max-width: 360px;
+    margin: 0; /* Left aligned to match text */
   }
 
   .hero-img-area {
-    width: 100% !important;
-    margin-top: 3rem !important;
+    width: 100%;
+    margin-top: 3rem;
     display: flex !important;
-    justify-content: center !important;
+    justify-content: center;
   }
 
   .hero-img-area img {
-    width: 100% !important;
-    max-width: 400px !important; /* Ensure it can get quite large */
-    height: auto !important;
-    margin: 0 auto !important;
+    width: 100%;
+    max-width: 400px; /* Ensure it can get quite large */
+    height: auto;
+    margin: 0 auto;
   }
 }
 
@@ -1770,43 +1775,43 @@ header {
 @media (max-width: 900px) {
   .hero-container {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .hero-copy {
     display: contents !important;
   }
   .hero-logo {
     order: 1;
-    margin-bottom: 2rem !important;
-    align-self: flex-start !important;
+    margin-bottom: 2rem;
+    align-self: flex-start;
   }
   .hero-copy h1 {
     order: 2;
-    margin-bottom: 1.5rem !important;
-    align-self: flex-start !important;
-    text-align: left !important;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+    text-align: left;
   }
   .hero-copy p {
     order: 3;
-    margin-bottom: 1rem !important;
-    align-self: flex-start !important;
-    text-align: left !important;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    text-align: left;
   }
   .hero-img-area {
     order: 4;
-    margin-top: 1rem !important;
-    margin-bottom: 2rem !important;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .hero-cta-wrap {
     order: 5;
-    margin-top: 1rem !important;
+    margin-top: 1rem;
   }
 }
 
 /* --- About Section Mobile Padding Fix --- */
 @media (max-width: 900px) {
   .about-box {
-    padding: 4rem 1.5rem !important;
+    padding: 4rem 1.5rem;
   }
 }
 
@@ -1815,23 +1820,23 @@ header {
 /* --- About Header Mobile Tweaks --- */
 @media (max-width: 900px) {
   .about-header-wrap {
-    text-align: left !important;
+    text-align: left;
   }
   .about-header-h2 {
-    justify-content: flex-start !important;
+    justify-content: flex-start;
   }
   .about-towa-text {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
   }
 }
 
 /* --- Features Title Mobile Tweaks --- */
 @media (max-width: 900px) {
   .features-section-title {
-    justify-content: center !important;
+    justify-content: center;
   }
   .features-section-title span {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
   }
 }
 
@@ -1839,25 +1844,25 @@ header {
 @media (max-width: 900px) {
   .reason-container {
     display: flex !important;
-    flex-direction: column !important;
-    gap: 0 !important;
+    flex-direction: column;
+    gap: 0;
   }
   .reason-content {
     display: contents !important; /* Allow h2 and text to be reordered individually */
   }
   .reason-title {
     order: 1;
-    margin-bottom: 2rem !important;
-    text-align: left !important;
-    align-self: flex-start !important;
+    margin-bottom: 2rem;
+    text-align: left;
+    align-self: flex-start;
   }
   .reason-text {
     order: 2;
-    margin-bottom: 3rem !important;
+    margin-bottom: 3rem;
   }
   .reason-img-wrapper {
     order: 3;
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
   }
 }
 
@@ -1865,33 +1870,33 @@ header {
 @media (max-width: 900px) {
   /* 1. Remove padding from sections to let containers handle it uniformly */
   .section, .pricing-section {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* 2. Unify container padding to 2.5rem so ALL titles and texts align perfectly left */
   .container {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   /* 3. About box standard padding */
   .about-box {
-    box-sizing: border-box !important;
-    width: 100% !important;
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-    border-radius: 12px !important; /* Slightly smaller radius for mobile */
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 12px; /* Slightly smaller radius for mobile */
   }
 
   /* 4. Swipeable grids adjust to the new 2.5rem container padding */
   .pricing-grid, .sim-grid {
-    margin-left: -2.5rem !important;
-    margin-right: -2.5rem !important;
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
+    margin-left: -2.5rem;
+    margin-right: -2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 }
 
@@ -1905,25 +1910,25 @@ header {
 
 @media (max-width: 900px) {
   .problems-headline {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
   .problems-highlight {
-    font-size: 2.8rem !important;
+    font-size: 2.8rem;
   }
 }
 
 /* Utility for centering text */
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 /* --- Reduce Gap Between Hero and Problems Section on Mobile --- */
 @media (max-width: 900px) {
   .hero {
-    padding-bottom: 2rem !important; /* reduce hero bottom padding */
+    padding-bottom: 2rem; /* reduce hero bottom padding */
   }
   .problems-section {
-    padding-top: 3rem !important; /* reduce problems top padding */
+    padding-top: 3rem; /* reduce problems top padding */
   }
 }
 
@@ -1972,7 +1977,7 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
+  max-width: 30px; width: 100%;
   height: 30px;
   background-color: rgba(0, 161, 224, 0.1); /* Salesforce blue light bg */
   color: var(--primary);
@@ -1988,7 +1993,7 @@ header {
   }
   .problems-visual {
     flex: 0 0 auto;
-    width: 250px;
+    max-width: 250px; width: 100%;
   }
   .problems-checklist {
     grid-template-columns: 1fr;
@@ -2014,7 +2019,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  text-align: left !important;
+  text-align: left;
 }
 .bubble-box::after {
   content: "";
@@ -2040,7 +2045,7 @@ header {
   padding: 0 0.2rem;
 }
 .bubble-icon {
-  width: 32px;
+  max-width: 32px; width: 100%;
   height: auto;
   opacity: 0.8;
 }
@@ -2067,41 +2072,41 @@ header {
 @media (max-width: 900px) {
   /* Match p font size to others */
   .about-box p {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
   /* Make the SP image fit the container perfectly */
   .about-box picture img {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
   }
 }
 
 /* --- Mobile Footer Overrides --- */
 @media (max-width: 900px) {
   .footer-container {
-    align-items: flex-start !important;
-    text-align: left !important;
+    align-items: flex-start;
+    text-align: left;
   }
   .footer-left {
-    align-items: flex-start !important;
+    align-items: flex-start;
     width: 100%;
     margin-bottom: 2rem;
   }
   .logo-footer {
-    height: 35px !important;
-    width: auto !important;
+    height: 35px;
+    width: auto;
   }
   .footer-nav {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem 3rem !important; /* row-gap: 1.5rem, column-gap: 3rem */
+    gap: 1.5rem 3rem; /* row-gap: 1.5rem, column-gap: 3rem */
     width: 100%;
     text-align: left;
   }
   .footer-nav li a {
-    font-size: 1.5rem !important;
-    font-weight: bold !important;
+    font-size: 1.5rem;
+    font-weight: bold;
     display: inline-block;
   }
   .footer-company-info {
@@ -2112,18 +2117,18 @@ header {
 /* --- Mobile Footer Spacing Adjustments --- */
 @media (max-width: 900px) {
   .site-footer {
-    padding-top: 4rem !important;
+    padding-top: 4rem;
   }
   .footer-container {
-    gap: 2rem !important;
-    margin-bottom: 2.5rem !important;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
   }
   .footer-left {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem;
   }
   .footer-bottom-wrapper {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -2495,7 +2500,7 @@ header {
   .header-nav .menu-icon {
     align-items: center;
     justify-content: center;
-    width: 24px;
+    max-width: 24px; width: 100%;
     height: 24px;
     background: var(--primary);
     border-radius: 50%;
