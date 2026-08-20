@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Tab switching logic for simulation section
-  const simTabs = document.querySelectorAll('.sim-tab');
-  const simPanels = document.querySelectorAll('.sim-panel');
+  const simTabs = document.querySelectorAll('.simulation__tab');
+  const simPanels = document.querySelectorAll('.simulation__panel');
   if (simTabs.length > 0) {
     simTabs.forEach(tab => {
       tab.addEventListener('click', () => {
@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   // FAQ accordion logic
-  const faqQuestions = document.querySelectorAll('.faq-question');
+  const faqQuestions = document.querySelectorAll('.faq__question');
   faqQuestions.forEach(question => {
     question.addEventListener('click', () => {
-      const item = question.closest('.faq-item');
+      const item = question.closest('.faq__item');
       // Optional: Close other items when one is opened (accordion style)
-      // document.querySelectorAll('.faq-item').forEach(i => {
+      // document.querySelectorAll('.faq__item').forEach(i => {
       //   if(i !== item) i.classList.remove('active');
       // });
       item.classList.toggle('active');
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Hide CTA when reaching footer
-  const siteFooter = document.querySelector('.site-footer');
+  const siteFooter = document.querySelector('.footer');
   if (siteFooter && floatingCtaWrapper) {
     const footerObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
